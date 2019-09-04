@@ -1,5 +1,5 @@
 {% set name = "Quart-Trio" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0abfb97600ebf6fa70ab6fdaaec7209e00ebd9ccd74183b57782434ce1099bc
+  sha256: ac165889838dee0d5d2c991c391c7429f9cccabf2f6296936a72d8b7a891079f
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7.0
     - quart >=0.9.0
-    - trio >=0.9.0
+    - trio >=0.10.0
     - hypercorn >=0.6.0
 
 test:
