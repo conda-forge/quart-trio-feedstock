@@ -1,5 +1,5 @@
 {% set name = "Quart-Trio" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 136bcf0412fea3c96f8215324dc00abcfd609a1cbb13e8d8d0c0295c61dad3ad
+  sha256: dafc8f0440d4b70fa60d24122a161d2373894d2bfa9f713d9f1df1fd508f0834
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Quart-Trio is an extension for Quart to support the Trio event loop'
+  summary: Quart-Trio is an extension for Quart to support the Trio event loop
   description: |
     Quart-Trio is an extension for Quart to support the Trio event loop.
     This is an alternative to using the asyncio event loop present in the Python
