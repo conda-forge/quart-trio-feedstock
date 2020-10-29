@@ -5,7 +5,7 @@ Home: https://gitlab.com/pgjones/quart-trio
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quart-trio-feedstock/blob/master/LICENSE.txt)
 
 Summary: Quart-Trio is an extension for Quart to support the Trio event loop
 
