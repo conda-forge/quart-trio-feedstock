@@ -1,5 +1,5 @@
 {% set name = "Quart-Trio" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 933e3c18e232ece30ccbac7579fdc5f62f2f9c79c3273d6c341f5a1686791eb1
+  sha256: 27617f0c9fa8759d3056e9ddcdc038d44093af45eb5f84f8d5714872aaaa8c7d
 
 build:
   noarch: python
